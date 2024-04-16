@@ -1,0 +1,332 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Navbar Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="{% static 'bliss/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'bliss/css/style.css' %}">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="navbars.css" rel="stylesheet">
+  </head>
+
+  {% block content %}
+  <body>    
+    <main>
+        <nav class="navbar navbar-expand-lg rounded bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex">
+                    <a class="navbar-brand col-lg-3 me-0" href="#">Blossom & Bliss</a>
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pricing</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Body Area</a></li>
+                            <li><a class="dropdown-item" href="#">Treatment Type</a></li>
+                            <li><a class="dropdown-item" href="#">Duration</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                    <button class="btn btn-primary">Button</button>
+                </div>
+                </div>
+            </div>
+        </nav>
+    </main>
+
+    <style>
+        .container {
+            background-image: url("{% static 'bliss/images/hero-bg.png' %}");
+            background-size: cover;
+        }
+    </style>
+    <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="bg-image col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Find Your Sanctuary - Blossom & Bliss Day Spa</h1>
+            <p class="lead">Step away from the daily grind and discover a haven of relaxation at Blossom & Bliss Day Spa. 
+                Our tranquil environment and expert therapists are dedicated to promoting your well-being through personalized massage therapies, facials, and body treatments.  
+                Indulge in self-care and emerge feeling rejuvenated and restored.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Book a Session</button>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img class="rounded-lg-3" src="{% static 'bliss/images/relaxation.jpg' %}" alt="" width="720">
+          </div>
+        </div>
+      </div>
+
+      <main>
+
+        <section class="text-center">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">Subscribe to our news letter and get <br>Promos and Special offers by email</h1>
+              <p class="lead text-body-secondary"></p>
+              <div class="news-letter">
+                <input type="text" placeholder="email address">
+                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img src="{% static 'bliss/images/facial.jpg' %}" width="419" height="225" alt="Facial">
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img src="{% static 'bliss/images/body-massage.jpg' %}" height="225" alt="">
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                    <img src="{% static 'bliss/images/spa-room.jpg' %}" height="225" alt="">
+                    <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <style>
+                .col-wide {
+                    width: 100%;
+                    height: 150%;
+                }
+              </style>
+              <div class="col col-wide">
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <img src="{% static 'bliss/images/spa-place.jpg' %}" width="100%" height="100%" alt="">
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="team">
+            <div">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="intro">
+                            <h1>Our Team Of Experts</h1>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="{% static 'bliss/images/matshidiso.jpg' %}" alt="Matshdiso">
+                            <div class="social-icons">
+                                <a href="#"><i class="bx bxl-facebook"></i></a>
+                                <a href="#"><i class="bx bxl-twitter"></i></a>
+                                <a href="#"><i class="bx bxl-instagram"></i></a>
+                                <a href="#"><i class="bx bxl-pinterest"></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>CT Matjeke</h5>
+                        <p>Founder & Lead Tharapist</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="" alt="Khensani">
+                            <div class="social-icons">
+                                <a href="#"><i class="bx bxl-facebook"></i></a>
+                                <a href="#"><i class="bx bxl-twitter"></i></a>
+                                <a href="#"><i class="bx bxl-instagram"></i></a>
+                                <a href="#"><i class="bx bxl-pinterest"></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Khensani Maluleka</h5>
+                        <p>Massage Therapist</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="" alt="Thabita">
+                            <div class="social-icons">
+                                <a href="#"><i class="bx bxl-facebook"></i></a>
+                                <a href="#"><i class="bx bxl-twitter"></i></a>
+                                <a href="#"><i class="bx bxl-instagram"></i></a>
+                                <a href="#"><i class="bx bxl-pinterest"></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Thabita Mathafeng</h5>
+                        <p>Massage Therapist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      </main>
+
+      <script src="{% static 'bliss/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'bliss/js/bootstrap.bundle.min.js' %}"></script>
+
+    </body>
+
+    {% endblock %}
+
+    {% include 'footer.html' %}
+</html>
